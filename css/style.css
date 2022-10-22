@@ -1,0 +1,360 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Noto Sans Mono', monospace; */
+  /* font-family: 'Inria Sans', sans-serif !important; */
+}
+#header {
+  background: #f2f4e8;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#logo {
+  width: 200px;
+}
+.navLinks {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#menu {
+  display: none;
+}
+.navLinks ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 1rem;
+}
+.navLinks ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+@media (max-width: 966px) {
+  .navLinks ul {
+    padding: 0.7rem 8rem;
+  }
+  nav img {
+    margin: 0 1rem;
+  }
+}
+
+.containerHero {
+  background: #f2f4e8;
+}
+.columns {
+  background: #f2f4e8;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+.col1 {
+  width: 50%;
+  padding: 3rem 0;
+  padding-left: 1rem;
+}
+.col1 p {
+  font-weight: initial;
+  font-size: 18px;
+}
+.col1 h1 {
+  font-family: "Inria Sans", sans-serif !important;
+  font-size: 3.3em;
+  padding: 1rem 0;
+}
+.col2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.circle {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  background-color: #101010;
+  border-radius: 50%;
+}
+.circle img {
+  position: absolute;
+  width: 150px;
+  top: 47%;
+  left: 31%;
+}
+#weProvideImg {
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.arrowAnimation {
+  animation: fadeIn 10s;
+}
+@media (max-width: 835px) {
+  #menu {
+    display: block;
+  }
+  .columns {
+    display: flex;
+    flex-direction: column;
+  }
+  .col1 {
+    width: 100%;
+    padding: 1rem 3rem;
+  }
+  nav img {
+    margin: 0 3rem;
+  }
+  .col2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+}
+#arrow1 {
+  position: absolute;
+  top: 33%;
+  left: 25%;
+  width: 50px;
+  transform: scaleY(-1);
+}
+#arrow2 {
+  position: absolute;
+  top: 33%;
+  left: 61%;
+  width: 50px;
+}
+#arrow3 {
+  position: absolute;
+  top: 56%;
+  left: 25%;
+  width: 50px;
+}
+#arrow4 {
+  position: absolute;
+  top: 56%;
+  left: 61%;
+  width: 50px;
+  transform: scaleX(-1);
+}
+#img1 {
+  position: absolute;
+  top: 24%;
+  left: 10%;
+}
+#img2 {
+  position: absolute;
+  top: 22%;
+  width: 96px;
+  left: 62%;
+}
+#img3 {
+  position: absolute;
+  top: 68%;
+  width: 126px;
+  left: 10%;
+}
+#img4 {
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  width: 159px;
+}
+.featuresContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.featuresContent {
+  display: flex;
+}
+.featuresItem {
+  width: 25%;
+}
+.coursesContainer {
+  background-color: #f2f4e8;
+  height: 760px;
+}
+.coursesContainer h2 {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+}
+.coursesContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  width: 90%;
+  grid-template-columns: 262px 262px 262px;
+  grid-gap: 5rem;
+  padding-bottom: 8rem;
+}
+.coursesItem {
+  padding: 2rem;
+  border-radius: 1rem;
+  height: 315px;
+  background: white;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.coursesItem:hover {
+  background-color: #ddf247;
+}
+.coursesItem .courseBtn:hover {
+  background-color: white;
+}
+.coursesIcon img {
+  width: 50px;
+}
+.courseInfo h1 {
+  height: 135px;
+  padding: 1rem 0;
+}
+.courseBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 6px 15px;
+  background: #ddf247;
+  border-radius: 10px;
+  border: none;
+  font-family: "Inria Sans", sans-serif !important;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  box-shadow: 0px 1px 5px rgb(0, 0, 0, 0.1);
+}
+.courseBtn i {
+  font-size: 15px;
+  margin-left: 10px;
+}
+.wrapper {
+  max-width: 400px;
+}
+.searchInput {
+  position: relative;
+  background-color: #ddf247;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0px 1px 5px 3px rgb(0, 0, 0, 0.12);
+}
+.searchInput input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  padding: 0 3rem;
+  box-shadow: 0px 1px 5px rgb(0, 0, 0, 0.1);
+  background-color: black;
+  color: white;
+  font-family: "Inria Sans", sans-serif !important;
+  letter-spacing: 0.3px;
+  font-size: 16px;
+}
+.searchInput img {
+  width: 20px;
+  position: absolute;
+  left: 16px;
+  top: 13px;
+}
+.autocomBox {
+  /* padding: 0 3rem; */
+  max-height: 250px;
+  overflow-y: auto;
+  opacity: 0;
+  pointer-events: none;
+}
+.searchInput.active .autocomBox {
+  /* padding: 0 3rem; */
+  opacity: 1;
+  pointer-events: auto;
+}
+.autocomBox li {
+  list-style-type: none;
+  padding: 10px 3rem;
+  width: 100%;
+  border-radius: 10px;
+  cursor: default;
+  display: none;
+  font-size: 16px;
+  font-family: "Inria Sans", sans-serif !important;
+}
+.searchInput.active .autocomBox li {
+  display: block;
+}
+.autocomBox li:hover {
+  background-color: #f2f4e8;
+}
+.searchInput input:active {
+  border: 2px solid #ddf247;
+}
+.ftflex {
+  display: flex;
+  justify-content: center;
+}
+.footerCard {
+  position: absolute;
+  background: #ddf247;
+  width: 62%;
+  margin: 0 auto;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  max-width: 950px;
+}
+.cardContent p {
+  padding: 1rem;
+  /* font-family: 'Inria Sans', sans-serif !important; */
+}
+.cardContent ul {
+  display: block ruby;
+  list-style-type: none;
+  padding: 1rem;
+}
+.cardContent ul li {
+  padding: 0 0.5rem;
+}
+.cardContent img {
+  width: 25px;
+}
+.cardContent img:hover {
+  transform: scale(1.1);
+}
+footer {
+  height: 245px;
+  background-color: #101010;
+  color: white;
+}
+.footerContent {
+  padding-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+.footerContent img {
+  width: 16px;
+  margin: 0 0.5rem;
+}
+#bottomLine {
+  display: flex;
+  padding: 0.5rem;
+}
