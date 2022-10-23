@@ -69,6 +69,12 @@ li,
 .sylabus::selection {
   background: #ddf247;
 }
+.dropdown {
+  display: none;
+}
+.course-list li:hover ul.dropdown {
+  display: block;
+}
 /* Media Query */
 @media (max-width: 700px) {
   .accordion {
