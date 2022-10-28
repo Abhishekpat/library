@@ -16,38 +16,68 @@ nav {
   padding: 2rem 0;
   max-width: 1200px;
   margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
 }
 #logo {
   width: 200px;
 }
-.navLinks {
-  flex: 1;
+nav ul {
+  list-style-type: none;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
-
-#menu {
+nav ul li {
+  margin: 0 2rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #101010;
+}
+#burgerIcon {
   display: none;
 }
-.navLinks ul li {
-  list-style-type: none;
-  display: inline;
-  padding: 1rem;
+#click {
+  display: none;
 }
-.navLinks ul li a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
+#logo {
+  margin: 0 1rem;
 }
-@media (max-width: 966px) {
-  .navLinks ul {
-    padding: 0.7rem 8rem;
+@media (max-width: 835px) {
+  #burgerIcon {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #101010;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    z-index: 999;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul {
+    left: 0;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #ddf247;
+  }
+  nav ul li {
+    margin: 40px 0;
   }
   nav img {
-    margin: 0 1rem;
+    margin: 0 2rem;
   }
 }
-
+@media (max-width: 385px) {
+  #logo {
+    width: 150px;
+  }
+}
+/* Hero Section */
 .containerHero {
   background: #f2f4e8;
 }
@@ -116,16 +146,35 @@ nav {
     width: 100%;
     padding: 1rem 3rem;
   }
-  nav img {
-    margin: 0 3rem;
-  }
   .col2 {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 2rem 0;
   }
+  #logo {
+    margin: 0 3rem;
+  }
 }
+@media (max-width: 621px) {
+  #logo {
+    margin: 0 2rem;
+  }
+  .col1 {
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 511px) {
+  .col1 h1 {
+    font-size: 2.7em;
+  }
+}
+@media (max-width: 421px) {
+  .col1 h1 {
+    font-size: 33px;
+  }
+}
+
 #arrow1 {
   position: absolute;
   top: 33%;
@@ -207,7 +256,6 @@ nav {
   top: 13px;
 }
 .autocomBox {
-  /* padding: 0 3rem; */
   max-height: 250px;
   overflow-y: auto;
   opacity: 0;
@@ -236,7 +284,36 @@ nav {
 .searchInput input:active {
   border: 2px solid #ddf247;
 }
-
+@media (max-width: 511px) {
+  .circle {
+    height: 350px;
+    width: 350px;
+  }
+  .circle img {
+    width: 130px;
+  }
+  #img2 {
+    width: 79px;
+  }
+  #img3 {
+    width: 112px;
+  }
+  #img4 {
+    width: 143px;
+  }
+  #arrow1 {
+    width: 45px;
+  }
+  #arrow2 {
+    width: 45px;
+  }
+  #arrow3 {
+    width: 45px;
+  }
+  #arrow4 {
+    width: 45px;
+  }
+}
 /* Features Section */
 .featuresBox {
   max-width: 1200px;
