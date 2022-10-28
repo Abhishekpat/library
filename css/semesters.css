@@ -75,12 +75,11 @@ li,
 .course-list li:hover ul.dropdown {
   display: block;
 }
-/* Media Query */
-@media (max-width: 700px) {
-  .accordion {
-    width: 500px;
-  }
+.dropitem {
+  display: flex;
+  justify-content: space-between;
 }
+/* Media Query */
 @media (max-width: 700px) {
   .accordion {
     width: 400px;

@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  transition: ease-in;
   /* font-family: 'Noto Sans Mono', monospace; */
   /* font-family: 'Inria Sans', sans-serif !important; */
 }
@@ -174,75 +175,6 @@ nav {
   left: 50%;
   width: 159px;
 }
-.featuresContainer {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-.featuresContent {
-  display: flex;
-}
-.featuresItem {
-  width: 25%;
-}
-.coursesContainer {
-  background-color: #f2f4e8;
-  height: 760px;
-}
-.coursesContainer h2 {
-  display: flex;
-  justify-content: center;
-  padding: 5rem;
-}
-.coursesContent {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  justify-content: center;
-  width: 90%;
-  grid-template-columns: 262px 262px 262px;
-  grid-gap: 5rem;
-  padding-bottom: 8rem;
-}
-.coursesItem {
-  padding: 2rem;
-  border-radius: 1rem;
-  height: 315px;
-  background: white;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
-}
-.coursesItem:hover {
-  background-color: #ddf247;
-}
-.coursesItem .courseBtn:hover {
-  background-color: white;
-}
-.coursesIcon img {
-  width: 50px;
-}
-.courseInfo h1 {
-  height: 135px;
-  padding: 1rem 0;
-}
-.courseBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  padding: 6px 15px;
-  background: #ddf247;
-  border-radius: 10px;
-  border: none;
-  font-family: "Inria Sans", sans-serif !important;
-  font-size: 15px;
-  letter-spacing: 0.3px;
-  box-shadow: 0px 1px 5px rgb(0, 0, 0, 0.1);
-}
-.courseBtn i {
-  font-size: 15px;
-  margin-left: 10px;
-}
 .wrapper {
   max-width: 400px;
 }
@@ -266,6 +198,7 @@ nav {
   font-family: "Inria Sans", sans-serif !important;
   letter-spacing: 0.3px;
   font-size: 16px;
+  caret-color: #ddf247;
 }
 .searchInput img {
   width: 20px;
@@ -281,7 +214,6 @@ nav {
   pointer-events: none;
 }
 .searchInput.active .autocomBox {
-  /* padding: 0 3rem; */
   opacity: 1;
   pointer-events: auto;
 }
@@ -304,57 +236,81 @@ nav {
 .searchInput input:active {
   border: 2px solid #ddf247;
 }
-.ftflex {
-  display: flex;
-  justify-content: center;
-}
-.footerCard {
-  position: absolute;
-  background: #ddf247;
-  width: 62%;
+
+/* Features Section */
+.featuresBox {
+  max-width: 1200px;
   margin: 0 auto;
-  border-radius: 1rem;
-  text-align: center;
-  padding: 2rem 1rem;
-  max-width: 950px;
-}
-.cardContent p {
-  padding: 1rem;
-  /* font-family: 'Inria Sans', sans-serif !important; */
-}
-.cardContent ul {
-  display: block ruby;
-  list-style-type: none;
-  padding: 1rem;
-}
-.cardContent ul li {
-  padding: 0 0.5rem;
-}
-.cardContent img {
-  width: 25px;
-}
-.cardContent img:hover {
-  transform: scale(1.1);
-}
-footer {
-  height: 245px;
-  background-color: #101010;
-  color: white;
-}
-.footerContent {
-  padding-top: 10rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 12px;
-  letter-spacing: 0.2px;
+  flex-wrap: wrap;
 }
-.footerContent img {
-  width: 16px;
-  margin: 0 0.5rem;
+.featuresItem {
+  width: 300px;
+  text-align: center;
+  padding: 2rem;
 }
-#bottomLine {
+@media (max-width: 600px) {
+  .featuresItem {
+    width: 220px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 440px) {
+  .featuresItem {
+    width: 178px;
+    padding: 2rem 1rem;
+  }
+}
+
+/* Course Section */
+.courseTop {
   display: flex;
-  padding: 0.5rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+.courseContainer {
+  background: #f2f4e8;
+}
+.courseBox {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 0 4rem 0;
+}
+.courseItem {
+  width: 250px;
+  height: 300px;
+  margin: 2rem;
+  background: #ddf247;
+  border-radius: 1rem;
+  word-wrap: break-word;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.courseItem img {
+  padding: 1.5rem;
+}
+.courseItem h1 {
+  padding: 0 1.5rem;
+  height: 8rem;
+}
+.courseBtn {
+  display: flex;
+  justify-content: center;
+}
+.courseBtn button {
+  padding: 7px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border: none;
+  border-radius: 5px;
+  background: #101010;
+  color: #ddf247;
+}
+.courseBtn button i {
+  margin: 0 5px;
 }
