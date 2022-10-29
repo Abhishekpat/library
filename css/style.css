@@ -74,7 +74,7 @@ nav ul li a {
 }
 @media (max-width: 385px) {
   #logo {
-    width: 150px;
+    width: 130px;
   }
 }
 /* Hero Section */
@@ -459,7 +459,7 @@ footer {
 }
 @media (max-width: 430px) {
   .footerCard {
-    max-width: 330px;
+    max-width: 347px;
   }
   .footerCard h1 {
     font-size: 20px;
