@@ -27,7 +27,7 @@ nav ul {
   display: flex;
 }
 nav ul li {
-  margin: 0 2rem;
+  margin: 0 1.5rem;
 }
 nav ul li a {
   text-decoration: none;
