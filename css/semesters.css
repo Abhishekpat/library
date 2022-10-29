@@ -79,6 +79,9 @@ li,
   display: flex;
   justify-content: space-between;
 }
+.dropitem a {
+  color: #101010;
+}
 /* Media Query */
 @media (max-width: 700px) {
   .accordion {
