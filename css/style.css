@@ -48,7 +48,7 @@ nav ul li a {
   }
   nav ul {
     position: fixed;
-    top: 80px;
+    top: 100px;
     left: -100%;
     background: #101010;
     height: 100vh;
@@ -174,7 +174,11 @@ nav ul li a {
     font-size: 33px;
   }
 }
-
+@media (max-width: 480px) {
+  #logo {
+    width: 130px;
+  }
+}
 #arrow1 {
   position: absolute;
   top: 33%;
