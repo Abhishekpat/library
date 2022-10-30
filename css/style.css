@@ -419,6 +419,7 @@ footer {
   max-width: 768px;
   border-radius: 1rem;
   margin: 0 auto;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
 }
 .footerCard h1 {
   padding: 2rem;
