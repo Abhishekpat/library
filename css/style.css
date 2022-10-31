@@ -482,3 +482,45 @@ footer {
   width: 22px;
   margin: 7px;
 }
+
+.col1{
+
+
+  height: auto;
+  display:grid;
+  width: fit-content;
+  
+}
+
+.typing{
+
+  width:35ch;
+  animation: typing 2s steps(20) ,blink .2s  infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  
+}
+
+.typing p{
+  width: fit-content;
+}
+
+@keyframes typing 
+
+{
+ from {
+  width:0;
+ }
+}
+
+@keyframes blink {
+
+  50% {
+    border-color:transparent;
+  }
+  100%{
+    border: none;
+  }
+}
+
