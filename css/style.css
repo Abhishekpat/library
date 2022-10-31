@@ -483,44 +483,39 @@ footer {
   margin: 7px;
 }
 
-.col1{
-
-
-  height: auto;
-  display:grid;
-  width: fit-content;
-  
+.modal {
+  position: absolute;
+  width: 330px;
+  background: #ddf247;
+  top: 250px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #101010;
+  border-radius: 1rem;
+  transition: all 0.4s;
+}
+.modal img {
+  width: 18px;
+}
+.modal h1,
+.modal p {
+  letter-spacing: 0.3px;
+  padding: 1rem;
+  text-align: center;
+}
+.bi-x::before {
+  content: "\f62a";
+  position: absolute;
+  top: 19px;
+  right: 19px;
+}
+.overlay {
+  position: absolute;
+  height: 100vh;
+  background: #101010;
 }
 
-.typing{
-
-  width:35ch;
-  animation: typing 2s steps(20) ,blink .2s  infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  
+.hidden {
+  display: none;
 }
-
-.typing p{
-  width: fit-content;
-}
-
-@keyframes typing 
-
-{
- from {
-  width:0;
- }
-}
-
-@keyframes blink {
-
-  50% {
-    border-color:transparent;
-  }
-  100%{
-    border: none;
-  }
-}
-

@@ -54,3 +54,15 @@ function showSuggestions(list) {
   }
   suggBox.innerHTML = listData;
 }
+
+//Model window
+
+const modal = document.querySelector(".modal");
+const showModel = document.querySelectorAll(".model-window");
+
+for (let i = 0; i < showModel.length; i++) {
+  showModel[i].addEventListener("click", function () {
+    console.log("clicked");
+    modal.classList.remove("hidden");
+  });
+}
