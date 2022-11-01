@@ -484,7 +484,7 @@ footer {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   width: 330px;
   background: #ddf247;
   top: 250px;
@@ -494,6 +494,7 @@ footer {
   color: #101010;
   border-radius: 1rem;
   transition: all 0.4s;
+  z-index: 999;
 }
 .modal img {
   width: 18px;

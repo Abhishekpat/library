@@ -1,3 +1,5 @@
+"use strict";
+
 let suggestions = [
   "Basic Physics",
   "Basic Chymestry",
@@ -56,13 +58,11 @@ function showSuggestions(list) {
 }
 
 //Model window
-
 const modal = document.querySelector(".modal");
 const showModel = document.querySelectorAll(".model-window");
 
 for (let i = 0; i < showModel.length; i++) {
   showModel[i].addEventListener("click", function () {
-    console.log("clicked");
-    modal.classList.remove("hidden");
+    document.querySelector(".modal").classList.remove("hidden");
   });
 }
