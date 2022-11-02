@@ -47,7 +47,7 @@ function select(element) {
 }
 
 function showSuggestions(list) {
-  let listData;
+  let listData, userValue;
   if (!list.length) {
     userValue = inputBox.value;
     listData = "<li>" + userValue + "</li>";
@@ -55,15 +55,4 @@ function showSuggestions(list) {
     listData = list.join("");
   }
   suggBox.innerHTML = listData;
-}
-
-//Model window
-const modal = document.querySelector(".modal");
-const showModel = document.querySelectorAll(".model-window");
-
-for (let i = 0; i < showModel.length; i++) {
-  showModel[i].addEventListener("click", function () {
-    document.querySelector(".modal").classList.remove("hidden");
-    document.querySelector(".overlay").classList.remove("hide");
-  });
 }
