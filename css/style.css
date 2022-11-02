@@ -48,18 +48,21 @@ nav ul li a {
   }
   nav ul {
     position: fixed;
-    top: 100px;
+    top: 92.6px;
     left: -100%;
     background: #101010;
     height: 100vh;
     width: 100%;
     display: block;
     text-align: center;
-    z-index: 999;
+    z-index: 888;
     transition: all 0.3s ease;
   }
   #click:checked ~ ul {
     left: 0;
+  }
+  #click:checked ~ .containerHero {
+    position: fixed;
   }
   nav ul li a {
     text-decoration: none;
@@ -512,11 +515,21 @@ footer {
   right: 19px;
 }
 .overlay {
-  position: absolute;
-  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: #101010;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 888;
 }
 
 .hidden {
+  display: none;
+}
+
+.hide {
   display: none;
 }

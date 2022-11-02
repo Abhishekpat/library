@@ -64,5 +64,6 @@ const showModel = document.querySelectorAll(".model-window");
 for (let i = 0; i < showModel.length; i++) {
   showModel[i].addEventListener("click", function () {
     document.querySelector(".modal").classList.remove("hidden");
+    document.querySelector(".overlay").classList.remove("hide");
   });
 }
