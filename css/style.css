@@ -533,3 +533,12 @@ footer {
 .hide {
   display: none;
 }
+
+.model-window:hover {
+  transform: scale(1.05);
+}
+
+#logo,
+.arrowAnimation {
+  cursor: pointer;
+}
